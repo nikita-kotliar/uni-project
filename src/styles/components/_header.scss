@@ -1,0 +1,119 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 150px;
+    background: linear-gradient(to right, #47D0FF, #B697FF);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.5s linear;
+  
+    &__logo {
+      font-weight: 500;
+      color: #fff;
+      font-size: 20px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      padding: 5px;
+    }
+  
+    &__nav {
+      display: flex;
+    }
+  
+    &__menu {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        position: relative;
+  
+        &::after {
+          content: "";
+          position: absolute;
+          width: 120%;
+          height: 2px;
+          background-color: #fff;
+          bottom: -15px;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: 0.4s ease-in-out;
+          opacity: 0;
+        }
+  
+        &:hover::after,
+        &.active::after {
+          bottom: -5px;
+          opacity: 1;
+        }
+      }
+    }
+  
+    &__menu a {
+      color: #fff;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.2em;
+      text-decoration: none;
+    }
+  
+    &__burger {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: #111827;
+    }
+  
+    @media (max-width: 880px) {
+      padding: 24px 50px;
+      background: transparent;
+      box-shadow: none;
+  
+      &.activeScroll:not(.active) {
+        background: linear-gradient(to left, #47D0FF, #B697FF);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      }
+  
+      &__burger {
+        display: block;
+        color: #fff;
+      }
+  
+      &__nav {
+        display: none;
+        transition: 0.5s linear;
+  
+        &.active {
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: linear-gradient(to left, #47D0FF, #B697FF);
+          padding: 20px 0;
+          transition: 0.5s linear;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+      }
+  
+      &__menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+  
+      &.active {
+        background: linear-gradient(to left, #47D0FF, #B697FF);
+      }
+    }
+  }
+  

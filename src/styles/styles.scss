@@ -1,15 +1,8 @@
-@import url('./footer.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./video-section.css');
-@import url('./text-section.css');
-
-@import url('./video-section.mobile.css');
-@import url('./hero.mobile.css'); 
-@import url('./footer.mobile.css');
-@import url('./text-section.mobile.css');
-@import url('./header.mobile.css');
-
+@import './components/footer';
+@import './components/header';
+@import './components/hero';
+@import './components/video-section';
+@import './components/text-section';
 *,
 *::before,
 *::after {
@@ -30,21 +23,25 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
 button {
   font-family: inherit;
   cursor: pointer;
   border: none;
   background: none;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 ul,
 ol {
   list-style: none;
