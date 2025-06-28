@@ -1,8 +1,25 @@
-/* @media (max-width: 768px) {
+@media (max-width: 880px) {
+  .footer .bottom-text {
+    gap: 15px;
+    max-width: unset;
+    align-items: center;
+  }
+  
+  .footer {
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 15px;
+  }
+
+  .footer__logo img {
+    width: 60px;
+  }
+  
   .footer__info {
-    font-size: 0.75rem;
+    flex-direction: column;
   }
-  .footer__logo {
-    font-size: 0.9rem;
+  .footer__logo h2 {
+    font-size: 18px;
+    font-weight: 500;
   }
-}# sourceMappingURL=footer.mobile.css.map */
+}

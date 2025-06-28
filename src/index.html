@@ -10,9 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__logo">PROJECT</div>
-    <nav class="header__nav">
+    <nav class="header__nav" id="navMenu">
       <ul class="header__menu">
         <li class="active hero-link"><a href="#hero">Projects</a></li>
         <li class="text-link"><a href="#text-section">About Us</a></li>
@@ -20,13 +20,14 @@
         <li class="footer-link"><a href="#footer">Contact</a></li>
       </ul>
     </nav>
-    <button class="header__burger">&#9776;</button>
+    <button class="header__burger" id="burger">&#9776;</button>
   </header>
 
   <section id="hero" class="hero">
     <div class="hero__content">
       <div class="main">
         <img class="main_svg" src="./assets/image/MainSvg.svg" alt="Play button" />
+        <img class="main_svg_mobile" src="./assets/image/MainSvg_mobile.svg" alt="Play button" />
         <img src="./assets/image/hero_logo.png" alt="Logo" class="hero__icon" />
         <h1 class="hero__title">Your Headline<br>Here</h1>
       </div>
@@ -72,7 +73,7 @@
         <h2>PROJECT</h2>
       </div>
       <span class="bottom-text">
-        <p>123 Street,<br>Anytown, USA 12345</p>
+        <p>123 Street, Anytown, USA 12345</p>
         <p>hello@website.com</p>
       </span>
       

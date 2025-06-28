@@ -4,7 +4,12 @@
 @import url('./video-section.css');
 @import url('./text-section.css');
 
-/* Reset styles and base settings */
+@import url('./video-section.mobile.css');
+@import url('./hero.mobile.css'); 
+@import url('./footer.mobile.css');
+@import url('./text-section.mobile.css');
+@import url('./header.mobile.css');
+
 *,
 *::before,
 *::after {
@@ -23,7 +28,6 @@ body {
   background-color: #ffffff;
   color: #000000;
   min-height: 100vh;
-  padding-top: 50px;
   overflow-x: hidden;
 }
 img {
@@ -44,76 +48,4 @@ a {
 ul,
 ol {
   list-style: none;
-}
-
-
-
-
-@media (max-width: 480px) {
-  body {
-    padding-top: 60px;
-  }
-
-  .header {
-    padding: 15px 20px;
-  }
-  .header__menu {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .header__burger {
-    display: block;
-    color: #fff;
-  }
-  .header__nav {
-    display: none; /* сховаємо меню для бургер-меню */
-  }
-
-  .hero {
-    flex-direction: column;
-    padding: 40px 5vw;
-  }
-
-  .hero__title {
-    width: 100%;
-    font-size: 28px;
-    line-height: 36px;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .hero__content {
-    padding-left: 0;
-    padding-top: 30px;
-    flex: unset;
-    text-align: center;
-  }
-
-  .hero__text {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .hero__illustration {
-    width: 100%;
-    min-width: auto;
-    aspect-ratio: unset;
-    height: 200px;
-    background-position: center center;
-  }
-
-  .text-section,
-  .video-section,
-  .footer {
-    padding: 40px 20px;
-  }
-
-  .text-section__columns {
-    flex-direction: column;
-  }
-
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
 }

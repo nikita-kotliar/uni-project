@@ -1,0 +1,9 @@
+@media (max-width: 880px) {
+    .text-section {
+      padding: 60px 30px;
+    }
+    .text-section__title {
+      font-size: 40px;
+      max-width: 365px;
+    }
+  }

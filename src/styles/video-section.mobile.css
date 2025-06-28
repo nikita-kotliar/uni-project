@@ -1,9 +1,17 @@
-/* @media (max-width: 768px) {
+@media (max-width: 880px) {
+  .video-section {
+    padding: 0;
+  }
   .video-section__title {
-    font-size: 1.5rem;
+    font-size: 37px;
+    line-height: 53px;
   }
-  .video-section__player {
-    width: 100px;
-    height: 100px;
+}
+@media screen and (max-width: 1150px) {
+  .video-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 12px;
   }
-}# sourceMappingURL=video-section.mobile.css.map */
+}

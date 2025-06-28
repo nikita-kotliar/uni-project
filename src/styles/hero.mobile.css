@@ -1,16 +1,116 @@
-/* @media (max-width: 768px) {
+@media (max-width: 980px) {
   .hero {
-    flex-direction: column;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 880px) {
+  .hero__text {
+    max-width: 310px;
+    margin: 0 auto;
+    color: #fff;
+    opacity: 0.7;
     text-align: center;
   }
-  .hero__content {
-    order: 2;
-  }
+
   .hero__illustration {
-    order: 1;
-    margin-bottom: 2rem;
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
-  .hero__icon {
-    margin: 0 auto 1rem;
+
+  .main_svg {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
-}# sourceMappingURL=hero.mobile.css.map */
+  .main_svg_mobile {
+    display: block;
+    opacity: 1;
+    width: 391px;
+    height: 431px;
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+  
+
+  .hero__title {
+    text-align: center;
+    font-size: 50px;
+    line-height: 68px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    width: 300px;
+  }
+
+  .hero__content .main {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 28px;
+  }
+  
+  .hero {
+    flex-direction: column;
+    background: linear-gradient(to bottom, #B798FF, #48D1FF);
+    overflow: unset;
+    padding: 40px 5vw;
+    padding-top: 0;
+  }
+
+  .hero:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: -0px;
+    width: 123px;
+    height: 188px;
+    background: url(../assets/image/mobile_svg.png) no-repeat center center;
+    z-index: 10;
+  }
+  .hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    right: 0px;
+    width: 142px;
+    height: 224px;
+    background: url(../assets/image/mobile_svg2.png) no-repeat center center;
+    z-index: 10;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero__illustration {
+    background-image: url(../assets/image/hero_illustration-2x.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+  .hero__illustration {
+    background-image: url(../assets/image/hero_illustration-3x.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero__illustration {
+    background-image: url(../assets/image/hero_illustration-2x.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+  .hero__illustration {
+    background-image: url(../assets/image/hero_illustration-3x.png);
+  }
+}

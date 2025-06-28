@@ -1,6 +1,6 @@
 .video-section {
   position: relative;
-  overflow: hidden; /* обрізає фонові картинки */
+  overflow: hidden;
   background: linear-gradient(to right, #B697FF, #47D0FF);
   padding: 90px 0;
   color: #ffffff;
@@ -10,7 +10,7 @@
   position: relative;
   max-width: 650px;
   margin: 0 auto;
-  padding: 20px 20px; /* щоб був відступ на мобілках */
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,17 +18,8 @@
   transition: 1s linear;
 }
 
-@media screen and (max-width: 1150px) {
-  .video-content {
-    background: rgba(255, 255, 255, 0.1); /* напівпрозорий білий */
-    backdrop-filter: blur(10px); /* розмиття фону */
-    -webkit-backdrop-filter: blur(10px); /* для Safari */
-    border-radius: 12px;
-  }
-}
 
 
-/* Загальні стилі для картинок */
 .video-bg {
   position: absolute;
   top: 50px;
@@ -76,8 +67,3 @@
   z-index: 2;
 }
 
-@media (max-width: 880px) {
-  .video-section {
-    padding: 0;
-  }
-}
