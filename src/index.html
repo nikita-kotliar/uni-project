@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">PROJECT</div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="active hero-link"><a href="#hero">Projects</a></li>
+        <li class="text-link"><a href="#text-section">About Us</a></li>
+        <li class="video-link"><a href="#video-section">Stories</a></li>
+        <li class="footer-link"><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="header__burger">&#9776;</button>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero__content">
+      <div class="main">
+        <img class="main_svg" src="./assets/image/MainSvg.svg" alt="Play button" />
+        <img src="./assets/image/hero_logo.png" alt="Logo" class="hero__icon" />
+        <h1 class="hero__title">Your Headline<br>Here</h1>
+      </div>
+      <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+    </div>
+    <div class="hero__illustration"></div>
+  </section>
+
+  <section id="text-section" class="text-section">
+    <h2 class="text-section__title">This is the Section Headline,<br>Continues to Two Lines</h2>
+    <p class="text-section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+    <div class="text-section__columns">
+      <p class="text-section__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.
+      </p>
+      <p class="text-section__text">
+        Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+      </p>
+    </div>
+    <button class="text-section__button">Read more</button>
+  </section>
+
+  <section id="video-section" class="video-section">
+    <img src="./assets/image/Component1.svg" alt="" class="video-bg video-bg--left" />
+    <img src="./assets/image/Component2.svg" alt="" class="video-bg video-bg--right" />
+    <div class="video-content">
+      <h2 class="video-section__title">Learn more<br>about our culture...</h2>
+      <div class="video-section__player">
+        <img src="./assets/image/Play.svg" alt="Play button" />
+      </div>
+      <p class="video-section__caption">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+    
+  </section>
+
+  <footer id="footer" class="footer">
+    
+    <div class="footer__info">
+      <div class="footer__logo">
+        <img src="./assets/image/hero_logo.png" alt="logo">
+        <h2>PROJECT</h2>
+      </div>
+      <span class="bottom-text">
+        <p>123 Street,<br>Anytown, USA 12345</p>
+        <p>hello@website.com</p>
+      </span>
+      
+    </div>
+    <div class="footer__copyright">
+      <p>© 2021 Project. All rights reserved</p>
+      
+    </div>
+  </footer>
+  <script src="./navigation.js"></script>
+</body>
+</html>

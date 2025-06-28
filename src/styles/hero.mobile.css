@@ -1,0 +1,16 @@
+/* @media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__content {
+    order: 2;
+  }
+  .hero__illustration {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+  .hero__icon {
+    margin: 0 auto 1rem;
+  }
+}# sourceMappingURL=hero.mobile.css.map */
